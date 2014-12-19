@@ -692,12 +692,16 @@
 		background-image: url('../images/dfabanner.jpg');
 		background-size: 70% auto;
 		background-repeat: no-repeat;
-		background-position: center center;
-		background-attachment: fixed;
+		/* changed to center top instead of center center */
+		background-position: center top;
+		/* play between fixed and absolute */
+		background-attachment: absolute;
 		color: #fff;
 		text-align: center;
 		padding: 2.5em 0 2em 0;
 		cursor: default;
+		/* added line below 
+		margin-top: 60px; */
 	}
 
 		.homepage #header
@@ -714,6 +718,7 @@
 				left: 0;
 				top: 0;
 				width: 100%;
+				/* Changed the height from 100% to 80% */
 				height: 100%;
 				opacity: 1.0;
 				-moz-transition: opacity 2s ease-in-out;
@@ -741,6 +746,8 @@
 			color: #fff;
 			font-size: 3em;
 			line-height: 1em;
+			/* added in */
+			margin-top: 70px;
 		}
 
 			.homepage #header h1
@@ -802,15 +809,18 @@
 
 	#nav
 	{
-		position: absolute;
+		/* changed from absolute to fixed */
+		position: fixed;
 		color: #185D45;
 		top: 0;
 		left: 0;
 		width: 100%;
 		text-align: center;
 		padding: 1.5em 0 1.5em 0;
+		/* changed from 1 to 10 */
 		z-index: 1;
-		overflow: hidden;
+		height: 90px;
+  		background-color: #fff;
 
 	}
 	
@@ -956,6 +966,8 @@
 		background: #C9252B;
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
+		/* Added in the line below */
+        margin-top:-310px;
 		margin-bottom: 0;
 	}
 	
