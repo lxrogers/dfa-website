@@ -396,7 +396,7 @@
 					
 						ul.icons li a:hover
 						{
-							color: #ef8376;
+							color: #000;
 						}
 		
 		ol
@@ -560,7 +560,7 @@
 		{
 			position: relative;
 			display: inline-block;
-			background: #df7366;
+			background: #C9252B;
 			color: #fff;
 			text-align: center;
 			border-radius: 0.5em;
@@ -718,7 +718,6 @@
 				left: 0;
 				top: 0;
 				width: 100%;
-				/* Changed the height from 100% to 80% */
 				height: 100%;
 				opacity: 1.0;
 				-moz-transition: opacity 2s ease-in-out;
@@ -747,7 +746,7 @@
 			font-size: 3em;
 			line-height: 1em;
 			/* added in */
-			margin-top: 70px;
+			margin-top: 70px; 
 		}
 
 			.homepage #header h1
@@ -905,7 +904,7 @@
 		height: auto;
 		text-align: left;
 		border-radius: 0.5em;
-		box-shadow: 0 0.15em 0.25em 0 rgba(0,0,0,0.25);
+		box-shadow: 0 1em 1.25em 0 rgba(0,0,0,0.25);
 		min-width: 12em;
 		margin-top: -1em;
 	}
@@ -995,6 +994,13 @@
 			margin-bottom: 0;
 		}
 		
+.center {
+	margin-top: -85px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
 /*********************************************************************************/
 /* Sidebar                                                                       */
 /*********************************************************************************/
@@ -1032,6 +1038,71 @@
 		{
 			padding-top: 2em;
 		}		
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#foter
+	{
+		position: relative;
+		overflow: hidden;
+		padding: 6em 0 6em 0;
+		background: #2b252c;
+		color: #fff;
+	}
+
+		#foter .icon.circled
+		{
+			background: #fff;
+			color: #2b252c;
+		}
+
+		#foter header
+		{
+			text-align: center;
+			cursor: default;
+		}
+		
+		#foter h2,
+		#foter h3,
+		#foter h4,
+		#foter h5,
+		#foter h6
+		{
+			color: #fff;
+		}
+
+		#foter .contact
+		{
+			text-align: center;
+		}
+		
+			#foter .contact p
+			{
+				text-align: center;
+				margin: 0 0 3em 0;
+			}
+		
+		#foter .copyright
+		{
+			text-align: center;
+			color: rgba(128,128,128,0.75);
+			font-size: 0.8em;
+			cursor: default;
+		}
+
+			#foter .copyright a
+			{
+				color: rgba(128,128,128,0.75);
+			}
+
+				#foter .copyright a:hover
+				{
+					color: rgba(212,212,212,0.85);
+				}
+
 	
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -1042,7 +1113,7 @@
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: #2b252c;
+		background: #C9252B;
 		color: #fff;
 	}
 
